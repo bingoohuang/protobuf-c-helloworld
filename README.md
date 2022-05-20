@@ -59,4 +59,17 @@ sending ping... ping reply: hi
 
 ## License
 
-fuck it
+f* it.
+
+## dylib warning fixed on Mac
+
+Mac to fix following warning:
+
+```sh
+ld: warning: dylib (/usr/local/lib/libprotobuf-c.dylib) was built for newer macOS version (12.0) than being linked (11.3)
+```
+
+```sh
+sudo rm -rf /Library/Developer/CommandLineTools
+sudo xcode-select --install
+```
