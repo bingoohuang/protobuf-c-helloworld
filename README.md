@@ -6,9 +6,18 @@ This is the smallest useful demonstration of [protobuf-c](https://github.com/pro
 
 ## Prereqs
 
+1. Turn over the wall: `export https_proxy=http://127.0.0.1:9999 http_proxy=http://127.0.0.1:9999 all_proxy=socks5://127.0.0.1:10000`
 1. For OS X users with [homebrew](http://mxcl.github.io/homebrew/), just run: `brew install protobuf-c`
-1. `brew install autoconf automake libtool`
-1. `git clone https://github.com/protobuf-c/protobuf-c-rpc`, `./autogen.sh && ./configure && make && make install`
+1. `brew install autoconf automake libtool`; `git clone https://github.com/protobuf-c/protobuf-c-rpc && cd protobuf-c-rpc`; `./autogen.sh && ./configure && make && make install`
+
+```sh
+$ protoc-c --version
+protobuf-c 1.4.0
+libprotoc 3.19.4
+
+[protobuf-c-rpc] $ git log --format=format:'%h@%aI' -1
+44f1e87@2020-05-11T21:43:20-07:00
+```
 
 ## Building and Running
 
